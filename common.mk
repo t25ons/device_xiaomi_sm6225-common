@@ -211,6 +211,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.layer_caching_active_layer_timeout_ms=1000 \
+    debug.cpurend.vsync=false \
     debug.hwui.skia_atrace_enabled=false \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.svi=1 \

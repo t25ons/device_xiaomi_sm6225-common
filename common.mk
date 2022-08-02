@@ -235,6 +235,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     debug.cpurend.vsync=false \
     debug.hwui.skia_atrace_enabled=false \
+    debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000 \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.svi=1 \
     vendor.display.idle_time=0 \

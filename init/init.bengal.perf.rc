@@ -84,6 +84,9 @@ on property:vendor.post_boot.parsed=1
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 1
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
     setprop dalvik.vm.dex2oat-threads 6

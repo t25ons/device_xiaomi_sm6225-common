@@ -189,6 +189,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.crypto.volume.metadata.method=dm-default-key
 
+# Cached app compaction
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.activity_manager.use_compaction=true
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts

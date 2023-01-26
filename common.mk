@@ -232,6 +232,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_hwc_vds=0 \
     debug.sf.enable_egl_image_tracker=false \
+    debug.sf.predict_hwc_composition_strategy=0 \
     debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     debug.cpurend.vsync=false \
     debug.hwui.skia_atrace_enabled=false \

@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# APEX's
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Include GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
@@ -76,6 +73,10 @@ PRODUCT_ODM_PROPERTIES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.vc_call_vol_steps=11
+
+# APEX
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.apex.updatable=false
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.ozo.codec.enable=true \

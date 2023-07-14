@@ -112,6 +112,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.soundtrigger.xatx.vop.level=10 \
     ro.vendor.audio.soundtrigger=sva
 
+# Adaptive Suspend
+PRODUCT_SYSTEM_PROPERTIES += \
+    suspend.short_suspend_threshold_millis=2000 \
+    suspend.short_suspend_backoff_enabled=true \
+    suspend.max_sleep_time_millis=40000
+
 # Bluetooth
 TARGET_USE_QTI_BT_STACK := false
 

@@ -231,7 +231,8 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 TARGET_USE_QCOM_OFFSET := true
 
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor
+    android.frameworks.displayservice@1.0.vendor \
+    libdisplayconfig.qti
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
@@ -372,6 +373,7 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir / Init files
 PRODUCT_PACKAGES += \
+    init.goodix.events.sh \
     init.qti.dcvs.sh \
     init.qti.early_init.sh
 
